@@ -20,7 +20,8 @@ function App() {
   return (
     <div className="App">
       <Ciclo />
-      
+      Hola, soy E
+
     </div>
   );
 }
