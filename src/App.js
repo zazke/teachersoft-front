@@ -4,7 +4,7 @@ import { typography } from '@mui/system';
 import Ciclo from './Components/Ciclo';
 
 
-const theme = createTheme({
+const theme = createTheme(
   palette: {
     primary: {
       main: '#fefefe'
