@@ -1,10 +1,10 @@
-import { createTheme } from '@mui/material';
-import { lightBlue } from '@mui/material/colors';
-import { typography } from '@mui/system';
 import Ciclo from './Components/Ciclo';
-import Navbar from './Components/Navbar/Navbar'
-import NavbarUser from './Components/NavbarUser/NavbarUser'
+import Navbar from './Components/PageComponent/Navbar/Navbar'
+import NavbarUser from './Components/PageComponent/NavbarUser/NavbarUser'
+import General from './Components/PageComponent/Menu/General'
 import fotoUsuario from './assets/Images/profile-photo.png'
+import { BrowserRouter as Router, Route,Switch } from 'react-router-dom';
+import React, { useState, useEffect, useContext } from "react";
 
 function App() {
 
@@ -12,13 +12,13 @@ function App() {
   let rol = "Asistente de sección"
 
   return (
-    <div className="App">
+    <Router>
       <Navbar/>
       <NavbarUser nombre = {nombre} rol = {rol} foto = {fotoUsuario}/>
-      <Ciclo />
-      Hola, soy E
-
-    </div>
+      
+      <General inactive={false}/>
+      
+    </Router>
   );
 }
 

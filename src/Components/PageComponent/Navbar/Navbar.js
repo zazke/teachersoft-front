@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './Navbar.css'
-import LogoPucp from '../../assets/Images/LogoPUCP.png'
+import LogoPucp from '../../../assets/Images/LogoPUCP.png'
 
 const Navbar = ()=>{
         return(

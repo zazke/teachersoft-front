@@ -2,15 +2,16 @@
     background: #042354;
     height: 65px;
     display: flex;
-    align-items: center;
-    
+    align-items: center; 
+    justify-content: right;  
+    padding-right: 40px; 
 }
 
 .menu-icon{
     position: relative;
     size: relative;
-    left: 1358px;
     top: 2px;
+    justify-content: left; 
 }
 
 

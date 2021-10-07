@@ -5,13 +5,13 @@
     height: 40px;
     display: flex;
     align-items: center;
-    
 }
 
 .Umenu-icon{
-    position: relative;
-    left: 1100px;
-    top: 2px;
+    position: absolute;
+    justify-content: right;
+    padding-top: 4px;
+    right: 40px;
 }
 
 

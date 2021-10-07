@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './NavbarUser.css'
-import logout from '../../assets/Images/log-out.png'
+import logout from '../../../assets/Images/log-out.png'
 
 
 const NavbarUser = ({nombre, rol, foto}) => {
