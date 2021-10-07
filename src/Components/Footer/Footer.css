@@ -1,0 +1,39 @@
+.tw{
+    height: 20px;
+    width: 20px;
+    left: 20px;
+    right: 20px;
+    position: fixed;
+  }
+  
+  .gb{
+    height: 20px;
+    width: 20px;
+    left: 50px;
+    right: 20px;
+    position: fixed;
+  }
+  
+  .fb{
+    height: 20px;
+    width: 20px;
+    left: 80px;
+    right: 20px;
+    position: fixed;
+  }
+  
+  .wpp{
+    height: 20px;
+    width: 20px;
+    left: 110px;
+    right: 20px;
+    position: fixed;
+  }
+  
+  .lk{
+    height: 20px;
+    width: 20px;
+    left: 140px;
+    right: 20px;
+    position: fixed;
+  }
