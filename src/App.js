@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <Ciclo />
       Hola, soy E
-
+      se agregaron carpetas
     </div>
   );
 }
