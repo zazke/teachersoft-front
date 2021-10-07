@@ -28,14 +28,22 @@ export default function Ciclo() {
         })
     }
 
-    useEffect(()=> {
-        fetch("http://52.200.33.206:8080/ciclo/")
-        .then(res=> res.json())
-        .then((result)=> {
-            setCiclos(result);
+    useEffect(() => {
+    /*
+    fetch("https://jsonplaceholder.typicode.com/users%22)
+    .then(res=> res.json())
+    .then((result)=> {
+        setCiclos(result);
+    })
+    */
+    axios
+      .get("https://jsonplaceholder.typicode.com/users%22")
+        .then((result) => {
+          setCiclos(result.data);
+          console.log(result.data);
         })
-    },[])
-    
+
+    }, [])
     return(
         <Paper>
             <h1 style={{margin:"30px",alignContent:"center"}}>Sistemas de Gestión Docente</h1>
