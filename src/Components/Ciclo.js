@@ -18,8 +18,8 @@ export default function Ciclo() {
         console.log(ciclo)
         
         //En otro archivo - donde se colocarían todos los servicios - categorizados dependiendo de la pagina a solicitar - HTTTP - 52.200.33.206:8080/ciclo - 
-
-        fetch("http://52.200.33.206:8080/ciclo/", {
+        
+        fetch("https://jsonplaceholder.typicode.com/users", {
             method: "POST",
             headers: {"Content-Type":"application/json"},
             body: JSON.stringify(ciclo)
@@ -29,18 +29,10 @@ export default function Ciclo() {
     }
 
     useEffect(()=> {
-        /*
-        fetch("http://52.200.33.206:8080/ciclo/")
+        fetch("https://jsonplaceholder.typicode.com/users")
         .then(res=> res.json())
         .then((result)=> {
             setCiclos(result);
-        })
-        */
-        axios
-        .get("https://jsonplaceholder.typicode.com/users%22")
-        .then((result) => {
-          setCiclos(result.data);
-          console.log(result.data);
         })
     },[])
     
@@ -71,9 +63,9 @@ export default function Ciclo() {
             <h2 style = {{paddingLeft:"20px"}}>Ciclos Registrados:</h2>
             {ciclos.map(ciclo=> (
                 <Paper  style = {{paddingLeft:"40px"}} elevation={6} key={ciclo.id}>
-                    ID: {ciclo.id}<br/>
-                    Ano:{ciclo.anho}<br/>
-                    Periodo:{ciclo.periodo} <Button variant="outlined">Eliminar Ciclo</Button>
+                    ID: {ciclo.name}<br/>
+                    Ano:{ciclo.email}<br/>
+                    Periodo:{ciclo.phone} <Button variant="outlined">Eliminar Ciclo</Button>
                 </Paper>
                 
             ))}   
