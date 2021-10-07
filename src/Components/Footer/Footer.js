@@ -9,13 +9,13 @@ import './Footer.css';
 const Footer = () =>{
     return(
         <div className = "main-footer">
-            <nav className = "container">
+            <div className = "container">
                 <img className = "fb"   src={facebook} alt=""/>
                 <img className = "gb" src={github} alt=""/>
                 <img className = "lk" src={linkedin} alt=""/>
                 <img className = "tw" src={twitter} alt=""/>
                 <img className = "wpp" src={whatsapp} alt=""/>
-            </nav>
+            </div>
         </div>
     )
 }
