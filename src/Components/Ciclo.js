@@ -29,10 +29,18 @@ export default function Ciclo() {
     }
 
     useEffect(()=> {
+        /*
         fetch("http://52.200.33.206:8080/ciclo/")
         .then(res=> res.json())
         .then((result)=> {
             setCiclos(result);
+        })
+        */
+        axios
+        .get("https://jsonplaceholder.typicode.com/users%22")
+        .then((result) => {
+          setCiclos(result.data);
+          console.log(result.data);
         })
     },[])
     
