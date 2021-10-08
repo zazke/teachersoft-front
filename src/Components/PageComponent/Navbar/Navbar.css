@@ -1,0 +1,26 @@
+.NavbarItems {
+    background: #042354;
+    height: 65px;
+    display: flex;
+    align-items: center; 
+    justify-content: right;  
+    padding-right: 40px; 
+}
+
+.menu-icon{
+    position: relative;
+    size: relative;
+    top: 2px;
+    justify-content: left; 
+}
+
+
+.menu-image{
+    position: relative;
+    height: 40px;
+}
+
+
+
+
+
