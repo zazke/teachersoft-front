@@ -37,7 +37,7 @@
 }
 
 .prof-photo{
-    border: 2px solid #042354;
+    border: 1px solid #042354;
     box-sizing: border-box;
     border-radius: 100px;
     height: 35px;
@@ -46,7 +46,7 @@
 .profileNb{
     position: relative;
     top: 1.5px;
-    left: 50px;
+    left: 90px;
 }
 
 .prof-name{
@@ -73,4 +73,19 @@
     font-size: 15px;
     line-height: 115%;
     color: #00002B;
+}
+
+.divider{
+    position: absolute;
+    left: 80px;
+    width: 1px;
+    height: 100%;
+    border-radius: 5px;
+    background: rgb(236, 226, 226);
+}
+
+.iconList{
+    position: absolute;
+    left: 25px;
+    color: #3B4A81;
 }
