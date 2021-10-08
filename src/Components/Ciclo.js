@@ -5,6 +5,9 @@ import Menu from "@mui/icons-material/Menu";
 import { ClassNames } from "@emotion/react";
 import { Button, Container, TextField, Autocomplete} from "@mui/material";
 import axios from "axios"
+import { addCiclo, getAllCiclos } from "../Services/Ciclo";
+
+
 
 export default function Ciclo() {
     //const classes = useStyles();
@@ -16,31 +19,18 @@ export default function Ciclo() {
         e.preventDefault()
         const ciclo = {anho, periodo}
         console.log(ciclo)
-        
-        //En otro archivo - donde se colocarían todos los servicios - categorizados dependiendo de la pagina a solicitar - HTTTP - 52.200.33.206:8080/ciclo - 
-
-        fetch("http://52.200.33.206:8080/ciclo/", {
-            method: "POST",
-            headers: {"Content-Type":"application/json"},
-            body: JSON.stringify(ciclo)
-        }).then(()=> {
-            console.log("Nuevo Ciclo Agregado")
+        addCiclo(ciclo)
+          .then((newCiclo) => {
+          setCiclos(prevCiclos => prevCiclos.concat(newCiclo));
+          console.log("Nuevo Ciclo Agregado")
         })
     }
 
     useEffect(() => {
-    /*
-    fetch("https://jsonplaceholder.typicode.com/users%22)
-    .then(res=> res.json())
-    .then((result)=> {
-        setCiclos(result);
-    })
-    */
-    axios
-      .get("https://jsonplaceholder.typicode.com/users%22")
-        .then((result) => {
-          setCiclos(result.data);
-          console.log(result.data);
+
+      getAllCiclos()
+        .then((ciclos) => {
+          setCiclos(ciclos);
         })
 
     }, [])
