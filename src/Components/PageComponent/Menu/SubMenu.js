@@ -24,7 +24,7 @@ const DropdownLink = styled(Link)`
     background: #3B4A8160;
     cursor: pointer;
     filter: drop-shadow(0px 1px 3px rgba(65, 185, 228, 0.51));
-    color: #41B9E4;
+    color: #fff;
   }
 `;
 

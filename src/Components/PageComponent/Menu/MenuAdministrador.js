@@ -7,12 +7,6 @@ import * as BsIcons from "react-icons/bs";
 
 export const MenuAdministrador = [
   {
-    title: 'Asignar Roles',
-    path: '/asignarRol',
-    icon: <AiIcons.AiFillHome />,
-  },
-  {
-    
     title: 'Mantenimientos',
     path: '/mantenimiento',
     icon: <AiIcons.AiFillHome />,
@@ -20,14 +14,16 @@ export const MenuAdministrador = [
     iconOpened: <BsIcons.BsChevronUp />,
     subNav: [
       {
+        title: 'Ciclo',
+        path: '/mantenimiento/curso',
+      },
+      {
         title: 'Departamento',
         path: '/mantenimiento/departamento',
-        //icon: <IoIcons.IoIosPaper />
       },
       {
         title: 'Seccion',
         path: '/mantenimiento/seccion',
-        //icon: <IoIcons.IoIosPaper />
       }
     ]
   }

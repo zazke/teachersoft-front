@@ -15,7 +15,7 @@
   .SidebarLink:hover {
       background: #41B9E445;
       cursor: pointer;
-      color: #3B4A81;
+      color: #fff;
   }
   
   .SidebarLink.selected{
